@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array destructing</title>
+    </head>
+    <body>
+        <h1>Array destructing:</h1>
+        <p>Creating an array of strings contatining details of a student</p>
+        <button onclick="arrayde()">print name and rollno</button>
+        <p id="na"></p>
+        <p id="rn"></p>
+        <script>
+            function arrayde(){
+                let details=["qhudsiya","18B81A05L8","CSE","CSE-D","CVRCE"];
+                let [name,rollno]=details;
+                document.getElementById("na").innerHTML=name;
+                document.getElementById("rn").innerHTML=rollno;
+            }
+        </script>
+    </body>
+</html>

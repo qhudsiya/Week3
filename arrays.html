@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <h1>Array using Js</h1>
+        <h2> Array: </h2>
+        <p id="demo"></p>
+        <h3>Application of following operations on array:</h3>
+        <button id="op" onclick="op()">do the operations</button>
+        <h4>length</h4>
+        <p id="len"></p>
+        <h4>sort</h4>
+        <p id="sort1"></p>
+        <h4>push</h4>
+        <p id="push1"></p>
+        <h4>pop</h4>
+        <p id="pop1"></p>
+        <h4>shift</h4>
+        <p id="shift1"></p>
+        <h4>unshift</h4>
+        <p id="unshift1"></p>
+        <h4>slice</h4>
+        <p id="slice1"></p>
+        
+        <script>
+            function op(){
+            var arr=[120,2,43,20,15];
+            document.getElementById("demo").innerHTML = arr;
+            var x=arr.length;
+            document.getElementById("len").innerHTML = x;
+            document.getElementById("sort1").innerHTML = "array after sorting " + arr.sort(function(a, b){return a - b});
+            arr.push(6)
+            document.getElementById("push1").innerHTML = "array after pushing 6 :"+ arr;
+            document.getElementById("pop1").innerHTML = arr.pop();
+            arr.shift();
+            document.getElementById("shift1").innerHTML = arr;
+            arr.unshift(2);
+            document.getElementById("unshift1").innerHTML = "array after unhift(2) "+ arr;
+            document.getElementById("slice1").innerHTML = "array after slicing (2,4) :"+arr.slice(2,4);
+            }
+        </script>
+    </body>
+</html>

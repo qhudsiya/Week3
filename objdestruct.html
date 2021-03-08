@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object destructing</title>
+    </head>
+    <body>
+        <h1>Object destructing:</h1>
+        <p>Creating an array of strings contatining details of a student</p>
+        <button onclick="objde()">print values</button>
+        <p id="na"></p>
+        <p id="rn"></p>
+        <p id="se"></p>
+        <script>
+            function objde(){
+                let details={name: "qhudsiya",rollno: "18B81A05L8",sec: "CSE-D",clg: "CVRCE"};
+                let {name,rollno,sec}=details;
+                document.getElementById("na").innerHTML=name;
+                document.getElementById("rn").innerHTML=rollno;
+                document.getElementById("se").innerHTML=sec;
+            }
+        </script>
+    </body>
+</html>
