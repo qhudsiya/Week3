@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js funtion</title>
+    </head>
+    <body>
+        <h1>Function returns multiple values</h1>
+        <button onclick="newmul()">click here</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            function newmul(){
+            function mult(){
+                let name="qhudsiya",rollno="18B81A05L8";
+                return [name,rollno];
+            }
+            const [Name,Rollno]=mult();
+            document.getElementById("demo").innerHTML=Name;
+            document.getElementById("demo1").innerHTML=Rollno;
+        }
+        </script>
+    </body>
+</html>
